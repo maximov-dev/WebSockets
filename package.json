@@ -1,0 +1,23 @@
+{
+  "name": "WebMessenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.1.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.3"
+  }
+}

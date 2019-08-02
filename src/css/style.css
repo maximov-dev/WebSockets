@@ -1,0 +1,14 @@
+.full-list-msg{
+}
+#form, #input{
+    width: 100%;
+}
+
+#form{
+    display: inherit;
+}
+
+header, h1, span{
+    margin: auto;
+    text-align: center;
+}
