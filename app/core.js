@@ -2,7 +2,7 @@ const messages = document.getElementById('messages-list');
 const form = document.getElementById('form');
 const status = document.getElementById('status');
 const input = document.getElementById('input');
-const ws = new WebSocket('ws://test-wss.herokuapp.com:8080');
+const ws = new WebSocket('ws://test-wss.herokuapp.com');
 
 function setStatus(value) {
     status.innerHTML = value;

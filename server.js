@@ -5,7 +5,7 @@ const http = require("http");
 
 const server = http.createServer(app);
 
-app.use(express.static("src"));
+app.use(express.static("app"));
 
 const WebSocket = require("ws");
 
