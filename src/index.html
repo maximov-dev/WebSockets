@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Web Messenger</title>
+</head>
+<body>
+<header>
+    <h1>Web Socket Test</h1>
+    <span>STATUS:</span>
+    <span id="status">OFFLINE</span>
+</header>
+<div class="container">
+    <div class="full-list-msg">
+        <ul id="messages-list" class="list-group">
+        </ul>
+        <div class="input-group flex-nowrap">
+            <form id="form" class="form">
+                <input id="input" type="text" class="form-control" placeholder="Введите сообщение...">
+                <div class="input-group-prepend">
+                    <button class="input-group-text" id="addon-wrapping">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="scripts/core.js"></script>
+</body>
+</html>

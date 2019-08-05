@@ -2,7 +2,7 @@ const messages = document.getElementById('messages-list');
 const form = document.getElementById('form');
 const status = document.getElementById('status');
 const input = document.getElementById('input');
-const ws = new WebSocket('ws://localhost:3000');
+const ws = new WebSocket('ws://test-wss.herokuapp.com:8080');
 
 function setStatus(value) {
     status.innerHTML = value;
@@ -15,6 +15,7 @@ function printMessage(value) {
     li.innerHTML = value;
     messages.appendChild(li);
 }
+
 form.addEventListener('submit', event => {
     event.preventDefault();
     ws.send(input.value);
