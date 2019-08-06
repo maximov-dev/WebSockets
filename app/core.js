@@ -8,12 +8,17 @@ function setStatus(value) {
     status.innerHTML = value;
 }
 
+function viewLastMessage() {
+    messages.scrollTop = messages.scrollHeight;
+}
+
 function printMessage(value) {
     const li = document.createElement('li');
 
     li.setAttribute('class', 'list-group-item');
     li.innerHTML = value;
     messages.appendChild(li);
+    viewLastMessage();
 }
 
 form.addEventListener('submit', event => {
